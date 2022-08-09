@@ -1,0 +1,14 @@
+.container-fluid{
+    justify-content: center;
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+
+}
+.form-control{
+    width: 300px;
+
+}

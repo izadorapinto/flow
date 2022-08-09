@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pedidos.js"type='module' defer></script>
+    <title>Pedidos/Carrinho</title>
+</head>
+<body>
+     <form id="address-form" class="testando" method="post" action="cadastrarpedidos.php">
+      <div class="form-group">
+        <label for="Nome">Nome do Cliente</label>
+        <input type="text" class="form-control" name="nomecli">
+      </div>
+      <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" class="form-control" required id="cep" name="cep" minlength="8" maxlength="8">
+      </div>
+      <div class="form-group">
+        <label for="enderecocli">Endereço</label>
+        <input type="text" class="form-control" name="enderecocli" id="endereco" readonly>
+      </div>
+      <div class="form-group">
+        <label for="Numero">Numero</label>
+        <input type="text" class="form-control" name="Numero">
+      </div>
+      <div class="form-group">
+        <label for="cidadecli">Cidade</label>
+        <input type="text" class="form-control" name="cidadecli" id="cidade">
+      </div>
+      <div class="form-group">
+        <label for="bairro">Bairro</label>
+        <input type="text" class="form-control" name="bairro" id="bairro">
+      </div>
+      <div class="form-group">
+        <label for="estadocli">Estado</label>
+        <input type="text" class="form-control" name="estadocli" id="estado">
+      </div>
+      <div class="form-group">
+        <label for="nomeprod">Nome do Produto</label>
+        <input type="text" class="form-control" name="nomeprod">
+      </div>
+      <div class="form-group">
+        <label for="qtde">Quantidade</label>
+        <input type="text" class="form-control" name="qtde">
+      </div>
+      <div class="form-group">
+        <label for="Tamanho">Tamanho</label>
+        <input type="text" class="form-control" name="Tamanho">
+      </div>
+      <div class="form-group">
+        <label for="Valor_Total">Valor Total</label>
+        <input type="text" class="form-control" name="Valor_Total">
+      </div>
+      <div class="form-group">
+        <label for="Data_pedido">Data do pedido</label>
+        <input type="date" class="form-control" name="data_pedido">
+      </div>
+      <div class="form-group">
+        <label for="Data_Entrega">Data de Entrega Prevista</label>
+        <input type="date" class="form-control" name="data_Entrega">
+      </div>
+      <!-- <div class="form-group">
+        <label for="">Frete</label>
+        <input type="int" class="form-control">
+      </div> -->
+      <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+                <br>
+                <button type="reset" class="btn btn-success btn-block">Limpar</button>
+    </form>
+</body>
+</html>
